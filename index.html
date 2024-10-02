@@ -6,6 +6,13 @@
     <title>Unity WebGL Player | Test Telegram</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+        .close:before {
+          content: "\d7";
+          font-size: 30px;
+          font-style: normal;
+        }
+    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -21,6 +28,7 @@
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Test Telegram</div>
+        <span class="close"></span>
       </div>
     </div>
     <script>
@@ -116,6 +124,10 @@
             };
 
       document.body.appendChild(script);
+
+      function closeWin() {
+        myWindow.close();
+      }
 
     </script>
   </body>
